@@ -10,7 +10,17 @@ public class BMI {
         System.out.println("Podaj swoj wzrost w cm");
         int wzrost = scanner.nextInt();
 
-        float BMI =
+        float BMI = waga/(wzrost*wzrost);
+
+        if (BMI <18.5 || BMI > 24.9){
+
+            System.out.println("BMI optymalne");
+
+        }else{
+
+            System.out.println("BMI nieoptymalne");
+
+        }
 
 
 
